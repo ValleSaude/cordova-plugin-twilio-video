@@ -13,10 +13,10 @@
         app:overlaySurface="true"
         app:mirror="true"
         android:visibility="gone"
-        android:layout_width="96dp"
-        android:layout_height="96dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
         android:layout_margin="16dp"
-        android:layout_gravity="bottom|start"/>
+        android:layout_gravity="top|end"/>
 
     <com.twilio.video.VideoView
         android:id="@+id/primary_video_view"

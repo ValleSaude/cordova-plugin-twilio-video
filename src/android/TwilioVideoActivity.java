@@ -352,7 +352,7 @@ public class TwilioVideoActivity extends AppCompatActivity implements CallAction
      * The actions performed during disconnect.
      */
     private void setDisconnectAction() {
-        connectActionFab.setImageDrawable(ContextCompat.getDrawable(this, FAKE_R.getDrawable("ic_call_end_white_24px")));
+        connectActionFab.setImageDrawable(ContextCompat.getDrawable(this, FAKE_R.getDrawable("ic_phone_hangup")));
         connectActionFab.show();
         connectActionFab.setOnClickListener(disconnectClickListener());
     }
@@ -821,7 +821,7 @@ public class TwilioVideoActivity extends AppCompatActivity implements CallAction
                     boolean enable = !localAudioTrack.isEnabled();
                     localAudioTrack.enable(enable);
                     int icon = enable ?
-                            FAKE_R.getDrawable("ic_mic_green_24px") : FAKE_R.getDrawable("ic_mic_off_red_24px");
+                            FAKE_R.getDrawable("ic_microphone") : FAKE_R.getDrawable("ic_microphone_off");
                     muteActionFab.setImageDrawable(ContextCompat.getDrawable(
                             TwilioVideoActivity.this, icon));
                 }
